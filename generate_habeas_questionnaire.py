@@ -486,10 +486,6 @@ def build_questionnaire(filename="texas_habeas_questionnaire.pdf"):
         "Discovery Materials",
     ]
 
-    # Create two columns for documents
-    doc_col1 = documents[:8]
-    doc_col2 = documents[8:]
-
     for document in documents:
         story.append(Paragraph(f"[ ] {document}", checkbox_style))
 
